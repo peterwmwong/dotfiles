@@ -31,7 +31,7 @@ if [ ! -d "/home/vscode/workspace/v8" ]; then
     cd v8
     fetch v8
     cd v8
-    build/install-build-deps.sh --no-arm --no-chromeos-fonts --no-nacl --no-backwards-compatible
+    build/install-build-deps.sh --no-arm --no-chromeos-fonts --no-nacl --no-backwards-compatible --no-prompt
 fi
 
 echo "Checking for perf..."
