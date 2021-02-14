@@ -17,7 +17,7 @@ if [ ! -d "/home/vscode/workspace/depot_tools" ]; then
     cd /home/vscode/workspace
     git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
     export PATH=/home/vscode/workspace/depot_tools:$PATH
-    echo "\nexport PATH=/home/vscode/workspace/depot_tools:\$PATH\n" >> ~/.zshrc
+    echo "export PATH=/home/vscode/workspace/depot_tools:\$PATH" >> ~/.zshrc
 fi
 
 echo "Checking for v8 and dependencies..."
@@ -46,7 +46,7 @@ if [ ! -d "/home/vscode/workspace/kernel/tip/tools/perf" ]; then
     git clone --depth 1 git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git
     cd tip/tools/perf
     make
-    echo "\nexport PATH=/home/vscode/workspace/kernel/tip/tools/perf:\$PATH\n" >> ~/.zshrc
+    echo "export PATH=/home/vscode/workspace/kernel/tip/tools/perf:\$PATH" >> ~/.zshrc
 fi
 
 echo ""
