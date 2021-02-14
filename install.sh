@@ -46,5 +46,11 @@ if [ ! -d "/home/vscode/workspace/kernel/tip/tools/perf" ]; then
     git clone --depth 1 git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git
     cd tip/tools/perf
     make
-    echo "\nexport PATH=/home/vscode/workspace/kernel/tip/tools/perf/perf:\$PATH\n" >> ~/.zshrc
+    echo "\nexport PATH=/home/vscode/workspace/kernel/tip/tools/perf:\$PATH\n" >> ~/.zshrc
 fi
+
+echo ""
+echo "================================"
+echo "     PWW CODESPACE COMPLETE     "
+echo "================================"
+echo ""
