@@ -35,5 +35,5 @@ cd /home/vscode/workspace \
     && git clone --depth 1 git://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git \
     && cd tip/tools/perf \
     && make \
-    && ln -s /home/vscode/workspace/kernel/tip/tools/perf/perf /usr/bin/perf
+    && sudo ln -s /home/vscode/workspace/kernel/tip/tools/perf/perf /usr/bin/perf
 
