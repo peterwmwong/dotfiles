@@ -12,16 +12,15 @@ echo "----------------------"
 echo "Setting up depot_tools"
 echo "----------------------"
 echo ""
-cd ~/workspace
-git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
-export PATH=/home/vscode/workspace/depot_tools:$PATH
+cd /home/vscode/workspace \
+    && git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git \
+    && export PATH=/home/vscode/workspace/depot_tools:$PATH
 
 echo "-------------------------"
 echo "Installing v8 depedencies"
 echo "-------------------------"
+echo ""
 cd /home/vscode/workspace \
-    && git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git \
-    && export PATH=/home/vscode/workspace/depot_tools:$PATH \
     && mkdir v8 && cd v8 \
     && fetch v8 \
     && cd v8 \
